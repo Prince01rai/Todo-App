@@ -1,7 +1,6 @@
 <template>
   <div :class="['app', theme]">
 
-    <!-- SIDEBAR -->
     <aside class="sidebar">
       <h2 class="side-title">To-Do App</h2>
 
@@ -14,7 +13,6 @@
       </button>
     </aside>
 
-    <!-- MAIN AREA -->
     <main>
       <TodoList :filter="filter" />
     </main>
@@ -44,7 +42,6 @@ export default {
 </script>
 
 <style>
-/* LAYOUT */
 .app {
   display: flex;
   height: 100vh;
@@ -53,19 +50,16 @@ export default {
   transition: 0.3s ease;
 }
 
-/* Light Theme */
 :root {
   --bg: #f2f2f2;
   --text: #222;
 }
 
-/* Dark Theme */
 .dark {
   --bg: #121212;
   --text: #fff;
 }
 
-/* SIDEBAR */
 .sidebar {
   width: 220px;
   padding: 20px;
@@ -105,7 +99,6 @@ export default {
   background: #006cff !important;
 }
 
-/* MAIN AREA */
 main {
   flex: 1;
   padding: 40px;
